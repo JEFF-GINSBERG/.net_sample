@@ -29,6 +29,8 @@ namespace CustomValidationAttributeDemo.Models
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}" , ApplyFormatInEditMode = true)]
         [ValidBirthDate(ErrorMessage = "Birth Date can not be greater than current date")]
         public DateTime BirthDate { get; set; }
+        
+        public string CustomerEmail { get; set }
 
     }
 }
